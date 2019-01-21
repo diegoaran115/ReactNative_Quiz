@@ -179,8 +179,8 @@ class QuizPage extends Component {
               </View>
               <View style = {styles.questionResultContainer}>
                 <Text style = {styles.questionText}>Time: </Text>
-                {this.state.test_time >= 60 &&
-                  <View styles={styles.resultTimeContainer}>
+                { this.state.test_time >= 60 && 
+                  <View style ={styles.resultTimeContainer}>
                     <Text style = {[styles.questionText, styles.boldText]}>{Math.floor(this.state.test_time / 60)}</Text>
                     <Text style = {styles.questionText}>m </Text>
                   </View>
